@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <RelativeLayout
+        android:id="@+id/defaultLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+         android:id="@+id/txtDefaultText"
+         android:text="@string/txt_default_layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textSize="35dp"
+         android:fontFamily="@android:string/dialog_alert_title"/>
+
+        <Button
+            android:id="@+id/btnDefault"
+            android:layout_below="@+id/txtDefaultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_default_layout"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/errorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/accent_material_light"
+            android:text="@string/txt_error_layout"
+            android:textSize="35dp"/>
+
+        <Button
+            android:id="@+id/btnErrorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_error_layout"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
